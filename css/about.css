@@ -1,11 +1,16 @@
 #wrap {
     color: black;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #profile {
     height: 300px;
+}
+
+#profile_img{
+    width: 100px;
+
 }
 
 #education li {
@@ -15,7 +20,6 @@
 #profile_text {
     padding-top: 3%;
 }
-
 
 #profile_ li:nth-child(1) {
     font-weight: 800;

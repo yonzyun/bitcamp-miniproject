@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Web Developer :: Ji yeon Yong's portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -14,100 +14,20 @@
     <script>
         $('document').ready(function() {
             $('#menubar').load('menu.html');
-            $(':button').click(function() {
-                $('form').each(function() {
-                    this.reset();
-                });
-                $('#salaryvalue').html('0');
-                alert('Thank you!');
-            });
         });
     </script>
 </head>
-
 <body>
+   <div id="wrap">
     <div id="menu">
         <nav id="menubar"></nav>
     </div>
     <div id="wrapper">
-        <div id="left">
-            <h1>Contact</h1>
-            <form>
-                <label for="name">Name</label>
-                <br>
-                <input type="text" id="name" name="name">
-                <br>
-                <label for="phone">Phone</label>
-                <br>
-                <input type="text" id="phone" name="phone">
-                <br>
-                <label for="email">Email</label>
-                <br>
-                <input type="email" id="email" name="email">
-                <br>
-                <label for="website">Website</label>
-                <br>
-                <input type="url" id="website" name="website">
-                <br>
-                <label for="message">Message</label>
-                <br>
-                <textarea id="message" name="message" rows="5"></textarea>
-                <br>
-                <label for="salary">Salary</label>
-                <br>
-                <div id="salarydiv">
-                    <span id="salaryvalue">0</span>
-                    <input type="range" id="salary" name="salary" value="0" min="0" max="5000" step="100" oninput="document.getElementById('salaryvalue').innerHTML=this.value;">
-                </div>
-                <br>
-                <button type="button" class="btn btn-primary">Send</button>
-            </form>
-        </div>
-        <div id="right">
-            <nav>
-                <ul class="navul">
-                    <li>
-                        <a href="https://www.google.com"><img src="img/contact/googleplus.png" alt="email"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com"><img src="img/contact/facebook.png" alt="facebook"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com"><img src="img/contact/instagram.png" alt="instagram"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com"><img src="img/contact/twitter.png" alt="twitter"></a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="map"></div>
-        </div>
+        <div><h1>Contact</h1></div>
     </div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ff24913c47ff2f3fe936e5f7996e21fc">
-    </script>
-    <script>
-        var mapContainer = document.getElementById('map'),
-            mapOption = {
-                center: new daum.maps.LatLng(37.570440, 126.985326),
-                level: 1
-            };
-
-        var map = new daum.maps.Map(mapContainer, mapOption);
-
-        var imageSrc = 'img/contact/pin.png',
-            imageSize = new daum.maps.Size(64, 69),
-            imageOption = {
-                offset: new daum.maps.Point(27, 69)
-            };
-
-        var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            markerPosition = new daum.maps.LatLng(37.570440, 126.985326);
-
-        var marker = new daum.maps.Marker({
-            position: markerPosition,
-            image: markerImage
-        });
-
-        marker.setMap(map);
-    </script>
+    <div>
+    <h5>96yonz@gmail.com</h5>
+    <p><a href="https://github.com/yonzyun?tab=repositories" target="_blank"><img src="img/contact/github.png"></a></p>
+    </div>
+    </div>
 </body></html>

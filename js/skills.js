@@ -88,7 +88,7 @@ $(document).ready(function () {
         } else if (i == 4) {
             per.push(80);
         } else if (i == 5) {
-            per.push(85);
+            per.push(90);
         } else if (i == 6) {
             per.push(70);
         } else if (i == 7) {
